@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApiCategoryController;
+use App\Http\Controllers\ApiCompanyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ Route::get('/', function () {
 
 
 Route::apiResource('categories', ApiCategoryController::class);
+Route::apiResource('companies', ApiCompanyController::class);
